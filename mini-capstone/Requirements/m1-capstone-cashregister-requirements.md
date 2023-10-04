@@ -42,7 +42,7 @@ You’ve been asked to develop a cash register application for the Silver Shamro
         S3      Sour Gummy          Y        1        $0.15
     ```
 
-    - Each inventory item should show the inventory id, name, Y of N indicating if it is individually wrapped, quantity in stock, and price.
+    - Each inventory item should show the inventory id, name, Y or N indicating if it is individually wrapped, quantity in stock, and price.
     - Each item in the inventory system can have a maximum quantity of 100 in stock.
     - Every item is initially stocked to the maximum quantity.
     - If an item is out of stock it should not show 0 as the quantity, instead, it should show the text SOLD OUT.
