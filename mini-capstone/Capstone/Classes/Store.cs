@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Diagnostics;
+using System.Linq;
 using System.Reflection.Metadata;
 
 namespace Capstone.Classes
@@ -22,6 +23,7 @@ namespace Capstone.Classes
         public Store()
         {
             inventory = fileIO.ReadInventory();
+            inventory = SortList(inventory);
         }
         public Items[] ShowItems() 
         {
@@ -228,6 +230,11 @@ namespace Capstone.Classes
         public void ResetQuantityTotal(Items item)
         {
             item.QuantityTotalPrice = 0;
+        }
+        public List<Items> SortList(List<Items> inventory)
+        {
+            IEnumerable<Items> newInventory = inventory.OrderBy(Items => Items.InventoryId);
+            return newInventory.ToList();
         }
     }
 }

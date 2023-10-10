@@ -14,7 +14,6 @@ namespace Capstone
         {
             //this is the only code that should be in the Main method
             //do not change this code
-            
             UserInterface consoleInterface = new UserInterface();
             consoleInterface.Run();
 

@@ -1,5 +1,6 @@
 using Capstone.Classes;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
+using System.Collections.Generic;
 
 namespace CapstoneTests
 {
@@ -129,14 +130,5 @@ namespace CapstoneTests
 
             CollectionAssert.AreEqual(new int[] { 3, 0, 0, 3, 2, 0, 0 }, test);
         }
-        //[TestMethod]
-        //public void ItemSufficientStockCheck_Test()
-        //{
-        //    Store testObject = new Store();
-
-        //    string test = testObject.ItemInsufficientStockCheck("C1", "99");
-        //    //How can we test for sold out?
-        //    Assert.AreEqual("Success", test);
-        //}
     }
 }
